@@ -1,0 +1,2 @@
+json.extract! customerprovider, :id, :NAME, :ADDRESS, :EMAIL, :BIRTHDAY, :CPFCNPJ, :FISOUJUR, :PHONE1, :PHONE2, :CUSPRO, :created_at, :updated_at
+json.url customerprovider_url(customerprovider, format: :json)

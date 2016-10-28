@@ -1,0 +1,1 @@
+json.array! @perfil_processes, partial: 'perfil_processes/perfil_process', as: :perfil_process

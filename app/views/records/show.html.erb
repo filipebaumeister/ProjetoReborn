@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date emission:</strong>
+  <%= @record.DATE_EMISSION %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @record.USER %>
+</p>
+
+<p>
+  <strong>Account:</strong>
+  <%= @record.ACCOUNT %>
+</p>
+
+<p>
+  <strong>Financial op type:</strong>
+  <%= @record.FINANCIAL_OP_TYPE %>
+</p>
+
+<p>
+  <strong>Coef:</strong>
+  <%= @record.COEF %>
+</p>
+
+<p>
+  <strong>Value financed:</strong>
+  <%= @record.VALUE_FINANCED %>
+</p>
+
+<p>
+  <strong>Qt portion:</strong>
+  <%= @record.QT_PORTION %>
+</p>
+
+<p>
+  <strong>Value portion:</strong>
+  <%= @record.VALUE_PORTION %>
+</p>
+
+<p>
+  <strong>Value total?:</strong>
+  <%= @record.VALUE_TOTAL? %>
+</p>
+
+<p>
+  <strong>Customerprovider:</strong>
+  <%= @record.CUSTOMERPROVIDER %>
+</p>
+
+<p>
+  <strong>Car:</strong>
+  <%= @record.CAR %>
+</p>
+
+<p>
+  <strong>Payment method:</strong>
+  <%= @record.PAYMENT_METHOD %>
+</p>
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>

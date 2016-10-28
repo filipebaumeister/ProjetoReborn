@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rebuilds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>History</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rebuilds.each do |rebuild| %>
+      <tr>
+        <td><%= rebuild.VALUE %></td>
+        <td><%= rebuild.HISTORY %></td>
+        <td><%= link_to 'Show', rebuild %></td>
+        <td><%= link_to 'Edit', edit_rebuild_path(rebuild) %></td>
+        <td><%= link_to 'Destroy', rebuild, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rebuild', new_rebuild_path %>

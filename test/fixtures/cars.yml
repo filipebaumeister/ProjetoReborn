@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  NAME: MyString
+  CHASSI: MyString
+  STATUS: 1
+  FABYEAR: 2016-10-28
+  MODELYEAR: 2016-10-28
+  FUEL: 1
+  KM: 9.99
+  NEW: false
+  COLOREX: MyString
+  COLORIN: MyString
+  PLATE: MyString
+  TRANSMISSION: 1
+  FIPEVALUE: 9.99
+  BUYVALUE: 9.99
+  SELLVALUE: 9.99
+  SPECS: MyString
+  FILIAL: MyString
+  REBUILDCAR_id: 
+
+two:
+  NAME: MyString
+  CHASSI: MyString
+  STATUS: 1
+  FABYEAR: 2016-10-28
+  MODELYEAR: 2016-10-28
+  FUEL: 1
+  KM: 9.99
+  NEW: false
+  COLOREX: MyString
+  COLORIN: MyString
+  PLATE: MyString
+  TRANSMISSION: 1
+  FIPEVALUE: 9.99
+  BUYVALUE: 9.99
+  SELLVALUE: 9.99
+  SPECS: MyString
+  FILIAL: MyString
+  REBUILDCAR_id: 

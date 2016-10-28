@@ -1,0 +1,1 @@
+json.partial! "rebuilds/rebuild", rebuild: @rebuild

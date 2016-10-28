@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DATE_EMISSION: 2016-10-28
+  USER_id: 
+  ACCOUNT_id: 
+  FINANCIAL_OP_TYPE: MyString
+  COEF: 
+  VALUE_FINANCED: 9.99
+  QT_PORTION: 9.99
+  VALUE_PORTION: 9.99
+  VALUE_TOTAL?: 9.99
+  CUSTOMERPROVIDER_id: 
+  CAR_id: 
+  PAYMENT_METHOD_id: 
+
+two:
+  DATE_EMISSION: 2016-10-28
+  USER_id: 
+  ACCOUNT_id: 
+  FINANCIAL_OP_TYPE: MyString
+  COEF: 
+  VALUE_FINANCED: 9.99
+  QT_PORTION: 9.99
+  VALUE_PORTION: 9.99
+  VALUE_TOTAL?: 9.99
+  CUSTOMERPROVIDER_id: 
+  CAR_id: 
+  PAYMENT_METHOD_id: 

@@ -1,0 +1,1 @@
+json.array! @rebuilds, partial: 'rebuilds/rebuild', as: :rebuild

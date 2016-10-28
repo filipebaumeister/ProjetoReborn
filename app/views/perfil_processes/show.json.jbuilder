@@ -1,0 +1,1 @@
+json.partial! "perfil_processes/perfil_process", perfil_process: @perfil_process

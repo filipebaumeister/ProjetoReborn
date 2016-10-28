@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bank:</strong>
+  <%= @account.BANK %>
+</p>
+
+<p>
+  <strong>Agency:</strong>
+  <%= @account.AGENCY %>
+</p>
+
+<p>
+  <strong>Account code:</strong>
+  <%= @account.ACCOUNT_CODE %>
+</p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @rebuild.VALUE %>
+</p>
+
+<p>
+  <strong>History:</strong>
+  <%= @rebuild.HISTORY %>
+</p>
+
+<%= link_to 'Edit', edit_rebuild_path(@rebuild) %> |
+<%= link_to 'Back', rebuilds_path %>

@@ -1,0 +1,25 @@
+<%= form_for(@rebuild) do |f| %>
+  <% if @rebuild.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rebuild.errors.count, "error") %> prohibited this rebuild from being saved:</h2>
+
+      <ul>
+      <% @rebuild.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :VALUE %><br>
+    <%= f.text_field :VALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :HISTORY %><br>
+    <%= f.text_field :HISTORY %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

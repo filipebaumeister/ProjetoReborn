@@ -1,0 +1,53 @@
+<%= form_for(@customerprovider) do |f| %>
+  <% if @customerprovider.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@customerprovider.errors.count, "error") %> prohibited this customerprovider from being saved:</h2>
+
+      <ul>
+      <% @customerprovider.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_field :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :ADDRESS %><br>
+    <%= f.text_field :ADDRESS %>
+  </div>
+  <div class="field">
+    <%= f.label :EMAIL %><br>
+    <%= f.text_field :EMAIL %>
+  </div>
+  <div class="field">
+    <%= f.label :BIRTHDAY %><br>
+    <%= f.datetime_select :BIRTHDAY %>
+  </div>
+  <div class="field">
+    <%= f.label :CPFCNPJ %><br>
+    <%= f.text_field :CPFCNPJ %>
+  </div>
+  <div class="field">
+    <%= f.label :FISOUJUR %><br>
+    <%= f.text_field :FISOUJUR %>
+  </div>
+  <div class="field">
+    <%= f.label :PHONE1 %><br>
+    <%= f.text_field :PHONE1 %>
+  </div>
+  <div class="field">
+    <%= f.label :PHONE2 %><br>
+    <%= f.text_field :PHONE2 %>
+  </div>
+  <div class="field">
+    <%= f.label :CUSPRO %><br>
+    <%= f.text_field :CUSPRO %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Document number:</strong>
+  <%= @invoice.DOCUMENT_NUMBER %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @invoice.VALUE %>
+</p>
+
+<p>
+  <strong>Descount:</strong>
+  <%= @invoice.DESCOUNT %>
+</p>
+
+<p>
+  <strong>Addition:</strong>
+  <%= @invoice.ADDITION %>
+</p>
+
+<p>
+  <strong>Sale:</strong>
+  <%= @invoice.SALE %>
+</p>
+
+<%= link_to 'Edit', edit_invoice_path(@invoice) %> |
+<%= link_to 'Back', invoices_path %>

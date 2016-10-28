@@ -1,0 +1,1 @@
+json.array! @proccs, partial: 'proccs/procc', as: :procc

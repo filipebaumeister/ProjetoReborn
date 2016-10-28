@@ -1,0 +1,1 @@
+json.partial! "rebuild_cars/rebuild_car", rebuild_car: @rebuild_car

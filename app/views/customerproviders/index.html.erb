@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Customerproviders</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Email</th>
+      <th>Birthday</th>
+      <th>Cpfcnpj</th>
+      <th>Fisoujur</th>
+      <th>Phone1</th>
+      <th>Phone2</th>
+      <th>Cuspro</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customerproviders.each do |customerprovider| %>
+      <tr>
+        <td><%= customerprovider.NAME %></td>
+        <td><%= customerprovider.ADDRESS %></td>
+        <td><%= customerprovider.EMAIL %></td>
+        <td><%= customerprovider.BIRTHDAY %></td>
+        <td><%= customerprovider.CPFCNPJ %></td>
+        <td><%= customerprovider.FISOUJUR %></td>
+        <td><%= customerprovider.PHONE1 %></td>
+        <td><%= customerprovider.PHONE2 %></td>
+        <td><%= customerprovider.CUSPRO %></td>
+        <td><%= link_to 'Show', customerprovider %></td>
+        <td><%= link_to 'Edit', edit_customerprovider_path(customerprovider) %></td>
+        <td><%= link_to 'Destroy', customerprovider, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customerprovider', new_customerprovider_path %>

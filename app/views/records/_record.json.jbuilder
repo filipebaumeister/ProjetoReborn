@@ -1,0 +1,2 @@
+json.extract! record, :id, :DATE_EMISSION, :USER_id, :ACCOUNT_id, :FINANCIAL_OP_TYPE, :COEF, :VALUE_FINANCED, :QT_PORTION, :VALUE_PORTION, :VALUE_TOTAL?, :CUSTOMERPROVIDER_id, :CAR_id, :PAYMENT_METHOD_id, :created_at, :updated_at
+json.url record_url(record, format: :json)

@@ -1,0 +1,29 @@
+<%= form_for(@perfil_process) do |f| %>
+  <% if @perfil_process.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@perfil_process.errors.count, "error") %> prohibited this perfil_process from being saved:</h2>
+
+      <ul>
+      <% @perfil_process.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PERFIL_id %><br>
+    <%= f.text_field :PERFIL_id %>
+  </div>
+  <div class="field">
+    <%= f.label :PROCC_id %><br>
+    <%= f.text_field :PROCC_id %>
+  </div>
+  <div class="field">
+    <%= f.label :ABLE %><br>
+    <%= f.check_box :ABLE %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

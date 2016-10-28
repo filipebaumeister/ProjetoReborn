@@ -1,0 +1,21 @@
+<%= form_for(@procc) do |f| %>
+  <% if @procc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@procc.errors.count, "error") %> prohibited this procc from being saved:</h2>
+
+      <ul>
+      <% @procc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_field :NAME %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PERFIL_id: 
+  PROCC_id: 
+  ABLE: false
+
+two:
+  PERFIL_id: 
+  PROCC_id: 
+  ABLE: false

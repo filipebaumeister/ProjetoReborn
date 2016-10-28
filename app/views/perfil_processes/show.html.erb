@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Perfil:</strong>
+  <%= @perfil_process.PERFIL %>
+</p>
+
+<p>
+  <strong>Procc:</strong>
+  <%= @perfil_process.PROCC %>
+</p>
+
+<p>
+  <strong>Able:</strong>
+  <%= @perfil_process.ABLE %>
+</p>
+
+<%= link_to 'Edit', edit_perfil_process_path(@perfil_process) %> |
+<%= link_to 'Back', perfil_processes_path %>

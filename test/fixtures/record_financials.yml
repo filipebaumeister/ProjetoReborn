@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  FINANCIAL_id: 
+  RECORD_id: 
+
+two:
+  FINANCIAL_id: 
+  RECORD_id: 

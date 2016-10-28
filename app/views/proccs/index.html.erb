@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Proccs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @proccs.each do |procc| %>
+      <tr>
+        <td><%= procc.NAME %></td>
+        <td><%= link_to 'Show', procc %></td>
+        <td><%= link_to 'Edit', edit_procc_path(procc) %></td>
+        <td><%= link_to 'Destroy', procc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Procc', new_procc_path %>

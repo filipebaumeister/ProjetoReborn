@@ -1,0 +1,89 @@
+<%= form_for(@car) do |f| %>
+  <% if @car.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@car.errors.count, "error") %> prohibited this car from being saved:</h2>
+
+      <ul>
+      <% @car.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NAME %><br>
+    <%= f.text_field :NAME %>
+  </div>
+  <div class="field">
+    <%= f.label :CHASSI %><br>
+    <%= f.text_field :CHASSI %>
+  </div>
+  <div class="field">
+    <%= f.label :STATUS %><br>
+    <%= f.number_field :STATUS %>
+  </div>
+  <div class="field">
+    <%= f.label :FABYEAR %><br>
+    <%= f.date_select :FABYEAR %>
+  </div>
+  <div class="field">
+    <%= f.label :MODELYEAR %><br>
+    <%= f.date_select :MODELYEAR %>
+  </div>
+  <div class="field">
+    <%= f.label :FUEL %><br>
+    <%= f.number_field :FUEL %>
+  </div>
+  <div class="field">
+    <%= f.label :KM %><br>
+    <%= f.text_field :KM %>
+  </div>
+  <div class="field">
+    <%= f.label :NEW %><br>
+    <%= f.check_box :NEW %>
+  </div>
+  <div class="field">
+    <%= f.label :COLOREX %><br>
+    <%= f.text_field :COLOREX %>
+  </div>
+  <div class="field">
+    <%= f.label :COLORIN %><br>
+    <%= f.text_field :COLORIN %>
+  </div>
+  <div class="field">
+    <%= f.label :PLATE %><br>
+    <%= f.text_field :PLATE %>
+  </div>
+  <div class="field">
+    <%= f.label :TRANSMISSION %><br>
+    <%= f.number_field :TRANSMISSION %>
+  </div>
+  <div class="field">
+    <%= f.label :FIPEVALUE %><br>
+    <%= f.text_field :FIPEVALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :BUYVALUE %><br>
+    <%= f.text_field :BUYVALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :SELLVALUE %><br>
+    <%= f.text_field :SELLVALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :SPECS %><br>
+    <%= f.text_field :SPECS %>
+  </div>
+  <div class="field">
+    <%= f.label :FILIAL %><br>
+    <%= f.text_field :FILIAL %>
+  </div>
+  <div class="field">
+    <%= f.label :REBUILDCAR_id %><br>
+    <%= f.text_field :REBUILDCAR_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,1 @@
+json.partial! "proccs/procc", procc: @procc

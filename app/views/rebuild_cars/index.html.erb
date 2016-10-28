@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rebuild Cars</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Car</th>
+      <th>Rebuild</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rebuild_cars.each do |rebuild_car| %>
+      <tr>
+        <td><%= rebuild_car.CAR %></td>
+        <td><%= rebuild_car.REBUILD %></td>
+        <td><%= link_to 'Show', rebuild_car %></td>
+        <td><%= link_to 'Edit', edit_rebuild_car_path(rebuild_car) %></td>
+        <td><%= link_to 'Destroy', rebuild_car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rebuild car', new_rebuild_car_path %>
