@@ -1,0 +1,2 @@
+module RecordFinancialsHelper
+end

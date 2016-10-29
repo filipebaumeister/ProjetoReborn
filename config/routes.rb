@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'main/index'
+
+  devise_for :users
   resources :invoices
-  resources :record_financials
   resources :accounts
   resources :financials
   resources :records
@@ -8,15 +10,24 @@ Rails.application.routes.draw do
   resources :perfil_processes
   resources :proccs
   resources :perfils
-  resources :users
   resources :customerproviders
   resources :rebuild_cars
   resources :cars
   resources :rebuilds
+
+#'cars#index'
+
+devise_scope :user do
+  authenticated :user do
+    root 'main#index', as: :authenticated_root
+  end
+  unauthenticated do
+    root 'devise/sessions#new', as: :unauthenticated_root
+  end
+end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-
   # You can have the root of your site routed with "root"
   #get 'invoice/index'
   #get 'invoice#index'

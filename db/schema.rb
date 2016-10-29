@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161028023804) do
+ActiveRecord::Schema.define(version: 20161029202229) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "BANK"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20161028023804) do
     t.date     "FABYEAR"
     t.date     "MODELYEAR"
     t.integer  "FUEL"
-    t.decimal  "KM"
+    t.float    "KM"
     t.boolean  "NEW"
     t.string   "COLOREX"
     t.string   "COLORIN"
@@ -158,14 +158,23 @@ ActiveRecord::Schema.define(version: 20161028023804) do
   add_index "records", ["USER_id"], name: "index_records_on_USER_id"
 
   create_table "users", force: :cascade do |t|
-    t.string   "NAME"
-    t.string   "EMAIL"
-    t.string   "PASSWORD"
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
     t.integer  "PERFIL_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
   end
 
   add_index "users", ["PERFIL_id"], name: "index_users_on_PERFIL_id"
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
