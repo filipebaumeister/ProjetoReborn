@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  resources :financials
   get 'main/index'
 
   devise_for :users
   resources :invoices
   resources :accounts
-  resources :financials
   resources :records
   resources :payment_methods
   resources :perfil_processes

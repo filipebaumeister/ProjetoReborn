@@ -1,11 +1,33 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+one:
+  NATURE: MyString
+  CUSTOMERPROVIDER_id: 
+  PAID: false
+  BANK_id: 
+  DATE_EMISSION: 2016-10-31
+  DATE_DUE: 2016-10-31
+  DATE_PAYMENT: 2016-10-31
+  VALUE: 9.99
+  DISCOUNT: 9.99
+  MULCT: 9.99
+  INTEREST: 9.99
+  VALUE_PAID: 9.99
+  RECORD_id: 
+  HISTORY: MyText
+
+two:
+  NATURE: MyString
+  CUSTOMERPROVIDER_id: 
+  PAID: false
+  BANK_id: 
+  DATE_EMISSION: 2016-10-31
+  DATE_DUE: 2016-10-31
+  DATE_PAYMENT: 2016-10-31
+  VALUE: 9.99
+  DISCOUNT: 9.99
+  MULCT: 9.99
+  INTEREST: 9.99
+  VALUE_PAID: 9.99
+  RECORD_id: 
+  HISTORY: MyText

@@ -1,6 +1,7 @@
 class RecordFinancialsController < ApplicationController
   before_action :set_record_financial, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  
   # GET /record_financials
   # GET /record_financials.json
   def index

@@ -1,5 +1,6 @@
 class RebuildCarsController < ApplicationController
   before_action :set_rebuild_car, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /rebuild_cars
   # GET /rebuild_cars.json

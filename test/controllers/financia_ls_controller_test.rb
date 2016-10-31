@@ -18,7 +18,7 @@ class FinanciaLsControllerTest < ActionController::TestCase
 
   test "should create financial" do
     assert_difference('Financial.count') do
-      post :create, financial: {  }
+      post :create, financial: { BANK_id: @financial.BANK_id, CUSTOMERPROVIDER_id: @financial.CUSTOMERPROVIDER_id, DATE_DUE: @financial.DATE_DUE, DATE_EMISSION: @financial.DATE_EMISSION, DATE_PAYMENT: @financial.DATE_PAYMENT, DISCOUNT: @financial.DISCOUNT, HISTORY: @financial.HISTORY, INTEREST: @financial.INTEREST, MULCT: @financial.MULCT, NATURE: @financial.NATURE, PAID: @financial.PAID, RECORD_id: @financial.RECORD_id, VALUE: @financial.VALUE, VALUE_PAID: @financial.VALUE_PAID }
     end
 
     assert_redirected_to financial_path(assigns(:financial))
@@ -35,7 +35,7 @@ class FinanciaLsControllerTest < ActionController::TestCase
   end
 
   test "should update financial" do
-    patch :update, id: @financial, financial: {  }
+    patch :update, id: @financial, financial: { BANK_id: @financial.BANK_id, CUSTOMERPROVIDER_id: @financial.CUSTOMERPROVIDER_id, DATE_DUE: @financial.DATE_DUE, DATE_EMISSION: @financial.DATE_EMISSION, DATE_PAYMENT: @financial.DATE_PAYMENT, DISCOUNT: @financial.DISCOUNT, HISTORY: @financial.HISTORY, INTEREST: @financial.INTEREST, MULCT: @financial.MULCT, NATURE: @financial.NATURE, PAID: @financial.PAID, RECORD_id: @financial.RECORD_id, VALUE: @financial.VALUE, VALUE_PAID: @financial.VALUE_PAID }
     assert_redirected_to financial_path(assigns(:financial))
   end
 

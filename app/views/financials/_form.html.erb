@@ -11,6 +11,62 @@
     </div>
   <% end %>
 
+  <div class="field">
+    <%= f.label :NATURE %><br>
+    <%= f.text_field :NATURE %>
+  </div>
+  <div class="field">
+    <%= f.label :CUSTOMERPROVIDER_id %><br>
+    <%= f.text_field :CUSTOMERPROVIDER_id %>
+  </div>
+  <div class="field">
+    <%= f.label :PAID %><br>
+    <%= f.check_box :PAID %>
+  </div>
+  <div class="field">
+    <%= f.label :BANK_id %><br>
+    <%= f.text_field :BANK_id %>
+  </div>
+  <div class="field">
+    <%= f.label :DATE_EMISSION %><br>
+    <%= f.date_select :DATE_EMISSION %>
+  </div>
+  <div class="field">
+    <%= f.label :DATE_DUE %><br>
+    <%= f.date_select :DATE_DUE %>
+  </div>
+  <div class="field">
+    <%= f.label :DATE_PAYMENT %><br>
+    <%= f.date_select :DATE_PAYMENT %>
+  </div>
+  <div class="field">
+    <%= f.label :VALUE %><br>
+    <%= f.text_field :VALUE %>
+  </div>
+  <div class="field">
+    <%= f.label :DISCOUNT %><br>
+    <%= f.text_field :DISCOUNT %>
+  </div>
+  <div class="field">
+    <%= f.label :MULCT %><br>
+    <%= f.text_field :MULCT %>
+  </div>
+  <div class="field">
+    <%= f.label :INTEREST %><br>
+    <%= f.text_field :INTEREST %>
+  </div>
+  <div class="field">
+    <%= f.label :VALUE_PAID %><br>
+    <%= f.text_field :VALUE_PAID %>
+  </div>
+  <div class="field">
+    <%= f.label :RECORD_id %><br>
+    <%= f.text_field :RECORD_id %>
+  </div>
+  <div class="field">
+    <%= f.label :HISTORY %><br>
+    <%= f.text_area :HISTORY %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

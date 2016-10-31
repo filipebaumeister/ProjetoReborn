@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :BIRTHDAY %><br>
-    <%= f.datetime_select :BIRTHDAY %>
+    <%= f.date_select :BIRTHDAY , {:order => [:day, :month, :year], :use_month_numbers => true}%>
   </div>
   <div class="field">
     <%= f.label :CPFCNPJ %><br>

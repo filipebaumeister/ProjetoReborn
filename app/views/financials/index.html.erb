@@ -5,6 +5,20 @@
 <table>
   <thead>
     <tr>
+      <th>Nature</th>
+      <th>Customerprovider</th>
+      <th>Paid</th>
+      <th>Bank</th>
+      <th>Date emission</th>
+      <th>Date due</th>
+      <th>Date payment</th>
+      <th>Value</th>
+      <th>Discount</th>
+      <th>Mulct</th>
+      <th>Interest</th>
+      <th>Value paid</th>
+      <th>Record</th>
+      <th>History</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +26,20 @@
   <tbody>
     <% @financials.each do |financial| %>
       <tr>
+        <td><%= financial.NATURE %></td>
+        <td><%= financial.CUSTOMERPROVIDER %></td>
+        <td><%= financial.PAID %></td>
+        <td><%= financial.BANK %></td>
+        <td><%= financial.DATE_EMISSION %></td>
+        <td><%= financial.DATE_DUE %></td>
+        <td><%= financial.DATE_PAYMENT %></td>
+        <td><%= financial.VALUE %></td>
+        <td><%= financial.DISCOUNT %></td>
+        <td><%= financial.MULCT %></td>
+        <td><%= financial.INTEREST %></td>
+        <td><%= financial.VALUE_PAID %></td>
+        <td><%= financial.RECORD %></td>
+        <td><%= financial.HISTORY %></td>
         <td><%= link_to 'Show', financial %></td>
         <td><%= link_to 'Edit', edit_financial_path(financial) %></td>
         <td><%= link_to 'Destroy', financial, method: :delete, data: { confirm: 'Are you sure?' } %></td>

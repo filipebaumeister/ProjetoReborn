@@ -25,11 +25,11 @@
   </div>
   <div class="field">
     <%= f.label :FABYEAR %><br>
-    <%= f.date_select :FABYEAR %>
-  </div>
+    <%= f.date_select :FABYEAR, {:order => [:day, :month, :year], :use_month_numbers => true} %>
+    </div>
   <div class="field">
     <%= f.label :MODELYEAR %><br>
-    <%= f.date_select :MODELYEAR %>
+    <%= f.date_select :MODELYEAR, {:order => [:day, :month, :year], :use_month_numbers => true} %>
   </div>
   <div class="field">
     <%= f.label :FUEL %><br>

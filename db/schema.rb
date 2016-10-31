@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161029202229) do
+ActiveRecord::Schema.define(version: 20161031195223) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "BANK"
@@ -61,9 +61,27 @@ ActiveRecord::Schema.define(version: 20161029202229) do
   end
 
   create_table "financials", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "NATURE"
+    t.integer  "CUSTOMERPROVIDER_id"
+    t.boolean  "PAID"
+    t.integer  "BANK_id"
+    t.date     "DATE_EMISSION"
+    t.date     "DATE_DUE"
+    t.date     "DATE_PAYMENT"
+    t.decimal  "VALUE"
+    t.decimal  "DISCOUNT"
+    t.decimal  "MULCT"
+    t.decimal  "INTEREST"
+    t.decimal  "VALUE_PAID"
+    t.integer  "RECORD_id"
+    t.text     "HISTORY"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
+
+  add_index "financials", ["BANK_id"], name: "index_financials_on_BANK_id"
+  add_index "financials", ["CUSTOMERPROVIDER_id"], name: "index_financials_on_CUSTOMERPROVIDER_id"
+  add_index "financials", ["RECORD_id"], name: "index_financials_on_RECORD_id"
 
   create_table "invoices", force: :cascade do |t|
     t.integer  "DOCUMENT_NUMBER"

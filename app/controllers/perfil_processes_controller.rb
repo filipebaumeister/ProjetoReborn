@@ -1,6 +1,7 @@
 class PerfilProcessesController < ApplicationController
   before_action :set_perfil_process, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  
   # GET /perfil_processes
   # GET /perfil_processes.json
   def index

@@ -1,5 +1,6 @@
 class ProccsController < ApplicationController
   before_action :set_procc, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /proccs
   # GET /proccs.json

@@ -1,6 +1,7 @@
 class CustomerprovidersController < ApplicationController
   before_action :set_customerprovider, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!
+  
   # GET /customerproviders
   # GET /customerproviders.json
   def index

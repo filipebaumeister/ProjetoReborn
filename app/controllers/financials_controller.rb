@@ -69,6 +69,6 @@ class FinancialsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def financial_params
-      params.fetch(:financial, {})
+      params.require(:financial).permit(:NATURE, :CUSTOMERPROVIDER_id, :PAID, :BANK_id, :DATE_EMISSION, :DATE_DUE, :DATE_PAYMENT, :VALUE, :DISCOUNT, :MULCT, :INTEREST, :VALUE_PAID, :RECORD_id, :HISTORY)
     end
 end

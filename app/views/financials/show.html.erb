@@ -1,4 +1,74 @@
 <p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Nature:</strong>
+  <%= @financial.NATURE %>
+</p>
+
+<p>
+  <strong>Customerprovider:</strong>
+  <%= @financial.CUSTOMERPROVIDER %>
+</p>
+
+<p>
+  <strong>Paid:</strong>
+  <%= @financial.PAID %>
+</p>
+
+<p>
+  <strong>Bank:</strong>
+  <%= @financial.BANK %>
+</p>
+
+<p>
+  <strong>Date emission:</strong>
+  <%= @financial.DATE_EMISSION %>
+</p>
+
+<p>
+  <strong>Date due:</strong>
+  <%= @financial.DATE_DUE %>
+</p>
+
+<p>
+  <strong>Date payment:</strong>
+  <%= @financial.DATE_PAYMENT %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @financial.VALUE %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @financial.DISCOUNT %>
+</p>
+
+<p>
+  <strong>Mulct:</strong>
+  <%= @financial.MULCT %>
+</p>
+
+<p>
+  <strong>Interest:</strong>
+  <%= @financial.INTEREST %>
+</p>
+
+<p>
+  <strong>Value paid:</strong>
+  <%= @financial.VALUE_PAID %>
+</p>
+
+<p>
+  <strong>Record:</strong>
+  <%= @financial.RECORD %>
+</p>
+
+<p>
+  <strong>History:</strong>
+  <%= @financial.HISTORY %>
+</p>
+
 <%= link_to 'Edit', edit_financial_path(@financial) %> |
 <%= link_to 'Back', financials_path %>
