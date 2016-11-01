@@ -5,7 +5,6 @@ class CreateInvoices < ActiveRecord::Migration
       t.decimal :VALUE
       t.decimal :DESCOUNT
       t.decimal :ADDITION
-      t.references :SALE, index: true, foreign_key: true
 
       t.timestamps null: false
     end

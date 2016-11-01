@@ -18,7 +18,7 @@ class InvoicEsControllerTest < ActionController::TestCase
 
   test "should create invoice" do
     assert_difference('Invoice.count') do
-      post :create, invoice: { ADDITION: @invoice.ADDITION, DESCOUNT: @invoice.DESCOUNT, DOCUMENT_NUMBER: @invoice.DOCUMENT_NUMBER, SALE_id: @invoice.SALE_id, VALUE: @invoice.VALUE }
+      post :create, invoice: { ADDITION: @invoice.ADDITION, DESCOUNT: @invoice.DESCOUNT, DOCUMENT_NUMBER: @invoice.DOCUMENT_NUMBER, VALUE: @invoice.VALUE }
     end
 
     assert_redirected_to invoice_path(assigns(:invoice))
@@ -35,7 +35,7 @@ class InvoicEsControllerTest < ActionController::TestCase
   end
 
   test "should update invoice" do
-    patch :update, id: @invoice, invoice: { ADDITION: @invoice.ADDITION, DESCOUNT: @invoice.DESCOUNT, DOCUMENT_NUMBER: @invoice.DOCUMENT_NUMBER, SALE_id: @invoice.SALE_id, VALUE: @invoice.VALUE }
+    patch :update, id: @invoice, invoice: { ADDITION: @invoice.ADDITION, DESCOUNT: @invoice.DESCOUNT, DOCUMENT_NUMBER: @invoice.DOCUMENT_NUMBER, VALUE: @invoice.VALUE }
     assert_redirected_to invoice_path(assigns(:invoice))
   end
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161031195223) do
+ActiveRecord::Schema.define(version: 20161101195156) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "BANK"
@@ -88,12 +88,9 @@ ActiveRecord::Schema.define(version: 20161031195223) do
     t.decimal  "VALUE"
     t.decimal  "DESCOUNT"
     t.decimal  "ADDITION"
-    t.integer  "SALE_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
-
-  add_index "invoices", ["SALE_id"], name: "index_invoices_on_SALE_id"
 
   create_table "payment_methods", force: :cascade do |t|
     t.string   "NAME"

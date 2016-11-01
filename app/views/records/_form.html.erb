@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :DATE_EMISSION %><br>
-    <%= f.date_select :DATE_EMISSION %>
+    <%= f.date_select :DATE_EMISSION, {:order => [:day, :month, :year], :use_month_numbers => true}%>
   </div>
   <div class="field">
     <%= f.label :USER_id %><br>

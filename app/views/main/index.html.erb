@@ -4,8 +4,16 @@
 <p>Find me in app/views/main/index.html.erb</p>
 </head>
 <body>
+  <%= link_to 'Invoices', invoices_path %>
+  <%= link_to 'Financials', financials_path %>
+  <%= link_to 'Accounts', accounts_path %>
+  <%= link_to 'Records', records_path %>
+  <%= link_to 'Payment_Methods', payment_methods_path %>
+  <%= link_to 'Process', proccs_path %>
+  <%= link_to 'Perfil', perfils_path %>
+  <%= link_to 'CustomerProviders', customerproviders_path %>
+  <%= link_to 'Rebuilds', rebuilds_path %>
+
 </body>
-<footer>
-    <%= link_to "LogOut", destroy_user_session_path, method: :delete %><br />  
-</footer>
+
 </html>

@@ -1,4 +1,4 @@
-class RebuilDsController < ApplicationController
+class RebuildsController < ApplicationController
   before_action :set_rebuild, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   

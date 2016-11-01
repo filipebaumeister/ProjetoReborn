@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  resources :invoices
   resources :financials
   get 'main/index'
 
   devise_for :users
-  resources :invoices
   resources :accounts
   resources :records
   resources :payment_methods

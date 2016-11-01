@@ -5,11 +5,9 @@ one:
   VALUE: 9.99
   DESCOUNT: 9.99
   ADDITION: 9.99
-  SALE_id: 
 
 two:
   DOCUMENT_NUMBER: 1
   VALUE: 9.99
   DESCOUNT: 9.99
   ADDITION: 9.99
-  SALE_id: 
