@@ -1,19 +1,17 @@
 <html>
-<head>
-<h1>Main#index</h1>
-<p>Find me in app/views/main/index.html.erb</p>
-</head>
-<body>
-  <%= link_to 'Invoices', invoices_path %>
-  <%= link_to 'Financials', financials_path %>
-  <%= link_to 'Accounts', accounts_path %>
-  <%= link_to 'Records', records_path %>
-  <%= link_to 'Payment_Methods', payment_methods_path %>
-  <%= link_to 'Process', proccs_path %>
-  <%= link_to 'Perfil', perfils_path %>
-  <%= link_to 'CustomerProviders', customerproviders_path %>
-  <%= link_to 'Rebuilds', rebuilds_path %>
-
-</body>
-
+  <head>
+    <h1><%= t('Main') %></h1>
+  </head>
+  <body>
+    <%= link_to t('Invoices'), invoices_path %>
+    <%= link_to t('Cars'), cars_path %>
+    <%= link_to t('Financials'), financials_path %>
+    <%= link_to t('Accounts'), accounts_path %>
+    <%= link_to t('Records'), records_path %>
+    <%= link_to t('Payment_Methods'), payment_methods_path %>
+    <%= link_to t('Process'), proccs_path %>
+    <%= link_to t('Perfil'), perfils_path %>
+    <%= link_to t('CustomerProviders'), customerproviders_path %>
+    <%= link_to t('Rebuilds'), rebuilds_path %>
+  </body>
 </html>
