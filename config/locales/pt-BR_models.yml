@@ -1,0 +1,10 @@
+"pt-BR":
+  activerecord:
+    models:
+      invoice: "Notafiscal"
+    attributes:
+      invoice:
+        DOCUMENT_NUMBER: "Número de documento"
+        Value: "Valor"
+        Descount: "Desconto"
+        Addition: "Valor extra"
