@@ -34,6 +34,7 @@ body {
   position: absolute;
   left: 48%;
   margin-left: -125px;
+  margin-top: -50px;
 }
 
 .content h2 {
@@ -91,4 +92,10 @@ input.LoginButton{
 input.LoginButton:hover {
   background: #0288D1;
   box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+div.register{
+    margin-top:50px;
+    color:black;
+    font:600 12px helvetica;
 }

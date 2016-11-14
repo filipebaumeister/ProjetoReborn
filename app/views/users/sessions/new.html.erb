@@ -10,6 +10,8 @@
         <%= f.email_field :email, autofocus: true, :placeholder => "E-Mail"%>
         <%= f.password_field :password, autocomplete: "off", :placeholder => "Senha" %>
         <%= f.submit "Entrar", :class => 'LoginButton'%>
+        
+        <div class="register"><%= render "users/shared/links" %></div>
       </form>
     </div>
   <% end %>
