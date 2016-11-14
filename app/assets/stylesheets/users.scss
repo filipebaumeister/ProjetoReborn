@@ -1,3 +1,94 @@
-// Place all the styles related to the USERs controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  width: 100% !important;
+  box-sizing: border-box;
+  font-family:'helvetica', sans-serif;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e7e7e7 url("http://www.encontracarros.com/upload/bugatti/bugatti-vision-gran-turismo.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+.right {
+  width: 50%;
+  height: 100%;
+  background: #f9f9f9;
+  right: 0;
+  opacity: 0.83;
+  position: absolute;
+}
+
+.content {
+  width: 250px;
+  margin: 0 auto;
+  top: 25%;
+  position: absolute;
+  left: 48%;
+  margin-left: -125px;
+}
+
+.content h2 {
+  color: #03A9F4;
+  font-weight: 300;
+  font-size: 40px;
+  margin-left:52px;
+}
+
+.right input{
+	display: block;
+	width: 100%;
+	margin: 17px auto;
+	border:0;
+	border-bottom:2px solid #e7e7e9;
+	padding: 13px;
+  font-size: 17px;
+	outline:0;
+}
+
+
+.right input {
+	background: #eee;
+	padding-left: 45px;
+}
+
+input#user_email {
+    background: transparent url("http://oi59.tinypic.com/e7mr0z.jpg") no-repeat;
+	background-position: 10px 50%;
+	color: black;
+	font:750 21px helvetica;
+}
+
+input#user_password {
+    background: transparent url("http://oi60.tinypic.com/os92eo.jpg") no-repeat;
+    background-position: 10px 50%;
+	color:black;
+	font:750 21px helvetica;
+}
+
+input.LoginButton{
+    background-color: #03A9F4;
+    background-position: 10px 50%;
+	color: #fff;
+	font:600 16px sans-serif;
+	width: 100%;
+	padding:15px;
+	outline:0;
+	border:0px;
+	margin-top:10px;
+	margin-left:30px;
+	border-radius:3px;
+}
+
+input.LoginButton:hover {
+  background: #0288D1;
+  box-shadow: 0 4px 7px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
