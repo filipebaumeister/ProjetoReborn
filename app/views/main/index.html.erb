@@ -1,18 +1,10 @@
 <html>
   <head>
-    <h1><%= t('Main') %></h1>
+    <%= stylesheet_link_tag 'scaffolds', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'main', media: 'all', 'data-turbolinks-track' => true %>
   </head>
   <body>
-    <%= link_to t('Invoices'), invoices_path %>
-    <%= link_to t('Cars'), cars_path %>
-    <%= link_to t('Financials'), financials_path %>
-    <%= link_to t('Accounts'), accounts_path %>
-    <%= link_to t('Records'), records_path %>
-    <%= link_to t('Payment_Methods'), payment_methods_path %>
-    <!-- <%= link_to t('Process'), proccs_path %>  -->
-    <%= link_to t('Perfil'), perfils_path %>
-    <%= link_to t('CustomerProviders'), customerproviders_path %>
-    <%= link_to t('Rebuilds'), rebuilds_path %>
-    <%= link_to t('MyAccount'), edit_user_registration_path %>
-  </body>
+    <h1>Bem Vindo</h1>
+    <p> Escreva alguma coisa aqui...</p>
+    </body>
 </html>
