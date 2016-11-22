@@ -8,8 +8,13 @@
   </head>
   <body>
     <% if user_signed_in? %>
-      <%= render "layouts/sidebar" %>
+      <%= render partial: "layouts/partials/sidebar" %>
     <% end %>
     <%= yield %>
   </body>
+  <footer>
+    <% if user_signed_in? %>
+      <%= render partial: "layouts/partials/footer" %>
+    <% end %>
+  </footer>
 </html>

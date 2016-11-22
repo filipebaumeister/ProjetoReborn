@@ -30,15 +30,15 @@
   </div>
   <div class="field">
     <%= f.label :DATE_EMISSION %><br>
-    <%= f.date_select :DATE_EMISSION %>
+    <%= f.date_select :DATE_EMISSION, {:order => [:day, :month, :year], :use_month_numbers => true} %>
   </div>
   <div class="field">
     <%= f.label :DATE_DUE %><br>
-    <%= f.date_select :DATE_DUE %>
+    <%= f.date_select :DATE_DUE, {:order => [:day, :month, :year], :use_month_numbers => true} %>
   </div>
   <div class="field">
     <%= f.label :DATE_PAYMENT %><br>
-    <%= f.date_select :DATE_PAYMENT %>
+    <%= f.date_select :DATE_PAYMENT, {:order => [:day, :month, :year], :use_month_numbers => true} %>
   </div>
   <div class="field">
     <%= f.label :VALUE %><br>
