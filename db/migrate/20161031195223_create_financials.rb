@@ -2,7 +2,7 @@ class CreateFinancials < ActiveRecord::Migration
   def change
     create_table :financials do |t|
       t.string :NATURE
-      t.references :CUSTOMERPROVIDER, index: true, foreign_key: true
+      #t.references :CUSTOMERPROVIDER, index: true, foreign_key: true
       t.boolean :PAID
       t.references :BANK, index: true, foreign_key: true
       t.date :DATE_EMISSION
