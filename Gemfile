@@ -28,6 +28,8 @@ gem 'devise'
 # I18N for Devise - https://github.com/tigrish/devise-i18n
 gem 'devise-i18n'
 
+
+gem 'sqlite3'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
