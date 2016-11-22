@@ -31,7 +31,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.datetime :locked_at
 
       # Relacionamento com o Perfil do Usuário.
-      t.references :PERFIL, index: true, foreign_key: true
+      # t.references :PERFIL, index: true, foreign_key: true
 
       t.timestamps null: false
     end
