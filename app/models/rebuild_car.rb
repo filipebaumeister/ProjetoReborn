@@ -1,4 +1,4 @@
 class RebuildCar < ActiveRecord::Base
-  belongs_to :CAR
-  belongs_to :REBUILD
+  has_and_belongs_to_many :CAR
+  has_and_belongs_to_many :REBUILD
 end

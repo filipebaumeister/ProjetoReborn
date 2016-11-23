@@ -9,4 +9,4 @@
 
 
 # User.find_or_create_by(email: 'admin@admin.com', password:'123456')
-# User.create([{email:'admin@admin.com', password:'123456'}])
+ User.create([{email:'admin@admin.com', password:'123456'}])

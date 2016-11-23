@@ -135,9 +135,12 @@ ActiveRecord::Schema.define(version: 20161101195156) do
   create_table "rebuilds", force: :cascade do |t|
     t.decimal  "VALUE"
     t.string   "HISTORY"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "REBUILDCAR_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
+
+  add_index "rebuilds", ["REBUILDCAR_id"], name: "index_rebuilds_on_REBUILDCAR_id"
 
   create_table "record_financials", force: :cascade do |t|
     t.integer  "FINANCIAL_id"
