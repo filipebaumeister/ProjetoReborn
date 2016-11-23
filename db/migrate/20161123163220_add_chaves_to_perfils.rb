@@ -1,4 +1,4 @@
-class AddPerfilProcessesToPerfils < ActiveRecord::Migration
+class AddChavesToPerfils < ActiveRecord::Migration
   def change
     add_reference :perfils, :procc, index: true, foreign_key: true
   end

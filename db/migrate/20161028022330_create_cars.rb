@@ -7,7 +7,6 @@ class CreateCars < ActiveRecord::Migration
       t.date :FABYEAR
       t.date :MODELYEAR
       t.integer :FUEL
-      #t.decimal :KM
       t.float :KM
       t.boolean :NEW
       t.string :COLOREX
