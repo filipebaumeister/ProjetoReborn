@@ -19,7 +19,8 @@ class CreateCars < ActiveRecord::Migration
       t.decimal :SELLVALUE
       t.string :SPECS
       t.string :FILIAL
-      t.references :REBUILDCAR, index: true, foreign_key: true
+      
+      #t.references :REBUILDCAR, index: true, foreign_key: true
 
       t.timestamps null: false
     end

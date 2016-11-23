@@ -13,7 +13,7 @@ class CreateFinancials < ActiveRecord::Migration
       t.decimal :MULCT
       t.decimal :INTEREST
       t.decimal :VALUE_PAID
-      t.references :RECORD, index: true, foreign_key: true
+      #t.references :RECORD_FINANCIAL, index: true, foreign_key: true
       t.text :HISTORY
 
       t.timestamps null: false
