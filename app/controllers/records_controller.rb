@@ -16,6 +16,7 @@ class RecordsController < ApplicationController
   # GET /records/new
   def new
     @record = Record.new
+    @record.USER_id = current_user.id
   end
 
   # GET /records/1/edit
