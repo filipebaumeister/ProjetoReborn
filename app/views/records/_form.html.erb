@@ -17,12 +17,8 @@
     <%= f.date_select :DATE_EMISSION, {:order => [:day, :month, :year], :use_month_numbers => true}%>
   </div>
   <div class="field">
-    <%= f.label :USER_id %><br>
-    <%= f.text_field :USER_id %>
-  </div>
-  <div class="field">
     <%= f.label :ACCOUNT_id %><br>
-    <%= f.text_field :ACCOUNT_id %>
+    <%= f.select(:ACCOUNT_id, Account.all.collect {|p| [ p.BANK, p.id ]}, {include_blank: 'Não Definido'}) %>
   </div>
   <div class="field">
     <%= f.label :FINANCIAL_OP_TYPE %><br>

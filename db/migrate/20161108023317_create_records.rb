@@ -11,7 +11,7 @@ class CreateRecords < ActiveRecord::Migration
       t.decimal :VALUE_PORTION
       t.decimal :VALUE_TOTAL?
       #t.references :CUSTOMERPROVIDER, index: true, foreign_key: true
-      # t.references :CAR, index: true, foreign_key: true
+      #t.references :CAR, index: true, foreign_key: true
       #t.references :PAYMENT_METHOD, index: true, foreign_key: true
 
       t.timestamps null: false

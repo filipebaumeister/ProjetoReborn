@@ -1,10 +1,9 @@
 class AddChavesToRecord < ActiveRecord::Migration
   def change
-    add_reference :records, :financial, index: true, foreign_key: true
-    add_reference :records, :user, index: true, foreign_key: true
-    add_reference :records, :account, index: true, foreign_key: true
-    add_reference :records, :customerprovider, index: true, foreign_key: true
-    add_reference :records, :car, index: true, foreign_key: true
-    add_reference :records, :payment_method, index: true, foreign_key: true
+    add_reference :records, :FINANCIAL, index: true, foreign_key: true
+    add_reference :records, :ACCOUNT, index: true, foreign_key: true
+    add_reference :records, :CUSTOMERPROVIDER, index: true, foreign_key: true
+    add_reference :records, :CAR, index: true, foreign_key: true
+    add_reference :records, :PAYMENT_METHOD, index: true, foreign_key: true
   end
 end
