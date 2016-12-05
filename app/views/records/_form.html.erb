@@ -18,7 +18,7 @@
   </div>
   <div class="field">
     <%= f.label :ACCOUNT_id %><br>
-    <%= f.select(:ACCOUNT_id, Account.all.collect {|p| [ p.BANK, p.id ]}, {include_blank: 'Não Definido'}) %>
+    <%= f.select(:account_id, Account.all.collect {|p| [ p.BANK, p.id ]}, {include_blank: 'Não Definido'}) %>
   </div>
   <div class="field">
     <%= f.label :FINANCIAL_OP_TYPE %><br>
@@ -46,15 +46,15 @@
   </div>
   <div class="field">
     <%= f.label :CUSTOMERPROVIDER_id %><br>
-    <%= f.text_field :CUSTOMERPROVIDER_id %>
+    <%= f.select(:customerprovider_id, Customerprovider.all.collect {|p| [ p.NAME, p.id ]}, {include_blank: 'Não Definido'}) %>
   </div>
   <div class="field">
     <%= f.label :CAR_id %><br>
-    <%= f.text_field :CAR_id %>
+    <%= f.text_field :car_id %>
   </div>
   <div class="field">
     <%= f.label :PAYMENT_METHOD_id %><br>
-    <%= f.text_field :PAYMENT_METHOD_id %>
+    <%= f.text_field :payment_method_id %>
   </div>
   <div class="actions">
     <%= f.submit %>

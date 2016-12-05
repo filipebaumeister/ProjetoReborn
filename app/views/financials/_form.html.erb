@@ -18,15 +18,15 @@
   </div>
   <div class="field">
     <%= f.label :CUSTOMERPROVIDER_id %><br>
-    <%= f.text_field :CUSTOMERPROVIDER_id %>
+    <%= f.select(:customerprovider_id, Customerprovider.all.collect {|p| [ p.NAME, p.id ]}, {include_blank: 'Não Definido'}) %>
   </div>
   <div class="field">
     <%= f.label :PAID %><br>
     <%= f.check_box :PAID %>
   </div>
   <div class="field">
-    <%= f.label :BANK_id %><br>
-    <%= f.text_field :BANK_id %>
+    <%= f.label :account_id %><br>
+    <%= f.select(:account_id, Account.all.collect {|p| [ p.ACCOUNT_CODE, p.id ]}, {include_blank: 'Não Definido'}) %>
   </div>
   <div class="field">
     <%= f.label :DATE_EMISSION %><br>
@@ -62,7 +62,7 @@
   </div>
   <div class="field">
     <%= f.label :RECORD_id %><br>
-    <%= f.text_field :RECORD_id %>
+    <%= f.select(:record_id, Record.all.collect {|p| [ p.id ]}, {include_blank: 'Não Definido'}) %>
   </div>
   <div class="field">
     <%= f.label :HISTORY %><br>

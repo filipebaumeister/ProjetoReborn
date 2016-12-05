@@ -71,12 +71,14 @@ ActiveRecord::Schema.define(version: 20161123163852) do
     t.text     "HISTORY"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
-    t.integer  "CUSTOMERPROVIDER_id"
-    t.integer  "ACCOUNT_id"
+    t.integer  "customerprovider_id"
+    t.integer  "account_id"
+    t.integer  "record_id"
   end
 
-  add_index "financials", ["ACCOUNT_id"], name: "index_financials_on_ACCOUNT_id"
-  add_index "financials", ["CUSTOMERPROVIDER_id"], name: "index_financials_on_CUSTOMERPROVIDER_id"
+  add_index "financials", ["account_id"], name: "index_financials_on_account_id"
+  add_index "financials", ["customerprovider_id"], name: "index_financials_on_customerprovider_id"
+  add_index "financials", ["record_id"], name: "index_financials_on_record_id"
 
   create_table "invoices", force: :cascade do |t|
     t.integer  "DOCUMENT_NUMBER"
@@ -95,15 +97,15 @@ ActiveRecord::Schema.define(version: 20161123163852) do
   end
 
   create_table "perfil_processes", force: :cascade do |t|
+    t.integer  "perfil_id"
+    t.integer  "procc_id"
     t.boolean  "ABLE"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "PERFIL_id"
-    t.integer  "PROCC_id"
   end
 
-  add_index "perfil_processes", ["PERFIL_id"], name: "index_perfil_processes_on_PERFIL_id"
-  add_index "perfil_processes", ["PROCC_id"], name: "index_perfil_processes_on_PROCC_id"
+  add_index "perfil_processes", ["perfil_id"], name: "index_perfil_processes_on_perfil_id"
+  add_index "perfil_processes", ["procc_id"], name: "index_perfil_processes_on_procc_id"
 
   create_table "perfils", force: :cascade do |t|
     t.string   "NAME"
@@ -118,14 +120,14 @@ ActiveRecord::Schema.define(version: 20161123163852) do
   end
 
   create_table "rebuild_cars", force: :cascade do |t|
+    t.integer  "car_id"
+    t.integer  "rebuild_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "CAR_id"
-    t.integer  "REBUILD_id"
   end
 
-  add_index "rebuild_cars", ["CAR_id"], name: "index_rebuild_cars_on_CAR_id"
-  add_index "rebuild_cars", ["REBUILD_id"], name: "index_rebuild_cars_on_REBUILD_id"
+  add_index "rebuild_cars", ["car_id"], name: "index_rebuild_cars_on_car_id"
+  add_index "rebuild_cars", ["rebuild_id"], name: "index_rebuild_cars_on_rebuild_id"
 
   create_table "rebuilds", force: :cascade do |t|
     t.decimal  "VALUE"
@@ -135,14 +137,14 @@ ActiveRecord::Schema.define(version: 20161123163852) do
   end
 
   create_table "record_financials", force: :cascade do |t|
+    t.integer  "financial_id"
+    t.integer  "record_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-    t.integer  "RECORD_id"
-    t.integer  "FINANCIAL_id"
   end
 
-  add_index "record_financials", ["FINANCIAL_id"], name: "index_record_financials_on_FINANCIAL_id"
-  add_index "record_financials", ["RECORD_id"], name: "index_record_financials_on_RECORD_id"
+  add_index "record_financials", ["financial_id"], name: "index_record_financials_on_financial_id"
+  add_index "record_financials", ["record_id"], name: "index_record_financials_on_record_id"
 
   create_table "records", force: :cascade do |t|
     t.date     "DATE_EMISSION"
@@ -154,16 +156,16 @@ ActiveRecord::Schema.define(version: 20161123163852) do
     t.decimal  "VALUE_TOTAL?"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
-    t.integer  "ACCOUNT_id"
-    t.integer  "CUSTOMERPROVIDER_id"
-    t.integer  "CAR_id"
-    t.integer  "PAYMENT_METHOD_id"
+    t.integer  "account_id"
+    t.integer  "customerprovider_id"
+    t.integer  "car_id"
+    t.integer  "payment_method_id"
   end
 
-  add_index "records", ["ACCOUNT_id"], name: "index_records_on_ACCOUNT_id"
-  add_index "records", ["CAR_id"], name: "index_records_on_CAR_id"
-  add_index "records", ["CUSTOMERPROVIDER_id"], name: "index_records_on_CUSTOMERPROVIDER_id"
-  add_index "records", ["PAYMENT_METHOD_id"], name: "index_records_on_PAYMENT_METHOD_id"
+  add_index "records", ["account_id"], name: "index_records_on_account_id"
+  add_index "records", ["car_id"], name: "index_records_on_car_id"
+  add_index "records", ["customerprovider_id"], name: "index_records_on_customerprovider_id"
+  add_index "records", ["payment_method_id"], name: "index_records_on_payment_method_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -178,11 +180,11 @@ ActiveRecord::Schema.define(version: 20161123163852) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.integer  "PERFIL_id"
+    t.integer  "perfil_id"
   end
 
-  add_index "users", ["PERFIL_id"], name: "index_users_on_PERFIL_id"
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["perfil_id"], name: "index_users_on_perfil_id"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end
