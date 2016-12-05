@@ -4,8 +4,6 @@ class CreateRebuilds < ActiveRecord::Migration
       t.decimal :VALUE
       t.string :HISTORY
 
-      #t.references :REBUILDCAR, index: true, foreign_key: true
-      
       t.timestamps null: false
     end
   end

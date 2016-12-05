@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161123163852) do
+ActiveRecord::Schema.define(version: 20161205174526) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "BANK"
@@ -120,10 +120,10 @@ ActiveRecord::Schema.define(version: 20161123163852) do
   end
 
   create_table "rebuild_cars", force: :cascade do |t|
-    t.integer  "car_id"
-    t.integer  "rebuild_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "car_id"
+    t.integer  "rebuild_id"
   end
 
   add_index "rebuild_cars", ["car_id"], name: "index_rebuild_cars_on_car_id"

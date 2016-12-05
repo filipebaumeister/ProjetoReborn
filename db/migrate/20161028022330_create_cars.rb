@@ -19,8 +19,6 @@ class CreateCars < ActiveRecord::Migration
       t.string :SPECS
       t.string :FILIAL
       
-      #t.references :REBUILDCAR, index: true, foreign_key: true
-
       t.timestamps null: false
     end
   end
