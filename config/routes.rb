@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :rebuilds
+  resources :rebuilds
   resources :invoices
   resources :financials
   get 'main/index'
@@ -11,9 +13,7 @@ Rails.application.routes.draw do
   resources :proccs
   resources :perfils
   resources :customerproviders
-  resources :rebuild_cars
   resources :cars
-  resources :rebuilds
 
 #'cars#index'
 

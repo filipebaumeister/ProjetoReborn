@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PerfiLsControllerTest < ActionController::TestCase
+class PerfilsControllerTest < ActionController::TestCase
   setup do
     @perfil = perfils(:one)
   end

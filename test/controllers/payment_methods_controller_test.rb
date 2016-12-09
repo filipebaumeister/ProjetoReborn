@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PaymentMethoDsControllerTest < ActionController::TestCase
+class PaymentMethodsControllerTest < ActionController::TestCase
   setup do
     @payment_method = payment_methods(:one)
   end

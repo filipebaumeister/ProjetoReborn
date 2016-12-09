@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RecorDsControllerTest < ActionController::TestCase
+class RecordsControllerTest < ActionController::TestCase
   setup do
     @record = records(:one)
   end

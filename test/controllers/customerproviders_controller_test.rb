@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CustomerprovideRsControllerTest < ActionController::TestCase
+class CustomerprovidersControllerTest < ActionController::TestCase
   setup do
     @customerprovider = customerproviders(:one)
   end

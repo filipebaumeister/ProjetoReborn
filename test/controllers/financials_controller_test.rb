@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class FinanciaLsControllerTest < ActionController::TestCase
+class FinancialsControllerTest < ActionController::TestCase
   setup do
     @financial = financials(:one)
   end

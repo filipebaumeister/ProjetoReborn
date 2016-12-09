@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RebuilDsControllerTest < ActionController::TestCase
+class RebuildsControllerTest < ActionController::TestCase
   setup do
     @rebuild = rebuilds(:one)
   end
@@ -18,7 +18,7 @@ class RebuilDsControllerTest < ActionController::TestCase
 
   test "should create rebuild" do
     assert_difference('Rebuild.count') do
-      post :create, rebuild: { HISTORY: @rebuild.HISTORY, VALUE: @rebuild.VALUE }
+      post :create, rebuild: { CAR_id: @rebuild.CAR_id, HISTORY: @rebuild.HISTORY, VALUE: @rebuild.VALUE }
     end
 
     assert_redirected_to rebuild_path(assigns(:rebuild))
@@ -35,7 +35,7 @@ class RebuilDsControllerTest < ActionController::TestCase
   end
 
   test "should update rebuild" do
-    patch :update, id: @rebuild, rebuild: { HISTORY: @rebuild.HISTORY, VALUE: @rebuild.VALUE }
+    patch :update, id: @rebuild, rebuild: { CAR_id: @rebuild.CAR_id, HISTORY: @rebuild.HISTORY, VALUE: @rebuild.VALUE }
     assert_redirected_to rebuild_path(assigns(:rebuild))
   end
 

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class AccounTsControllerTest < ActionController::TestCase
+class AccountsControllerTest < ActionController::TestCase
   setup do
     @account = accounts(:one)
   end

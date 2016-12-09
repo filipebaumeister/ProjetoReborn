@@ -1,4 +1,10 @@
 <p id="notice"><%= notice %></p>
+<%= stylesheet_link_tag  'scaffolds', media: 'all', 'data-turbolinks-track' => true %>
+
+<p>
+  <strong>ID:</strong>
+  <%= @car.id %>
+</p>
 
 <p>
   <strong>Name:</strong>
@@ -85,10 +91,5 @@
   <%= @car.FILIAL %>
 </p>
 
-<p>
-  <strong>Rebuildcar:</strong>
-  <%= @car.REBUILDCAR %>
-</p>
-
-<%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to 'Back', cars_path %>
+<%= link_to 'Nova Remontagem', new_rebuild_path(carro: @car.id) %></br></br>
+<%= link_to 'Edit', edit_car_path(@car) %> | <%= link_to 'Back', cars_path %>

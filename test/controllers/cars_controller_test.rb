@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CaRsControllerTest < ActionController::TestCase
+class CarsControllerTest < ActionController::TestCase
   setup do
     @car = cars(:one)
   end

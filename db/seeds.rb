@@ -9,4 +9,11 @@
 
 
 # User.find_or_create_by(email: 'admin@admin.com', password:'123456')
- User.create([{email:'admin@admin.com', password:'123456'}])
+User.create([{email:'admin@admin.com', password:'123456'}])
+Car.create([{NAME:'HB20'}])
+Car.create([{NAME:'PUNTO'}])
+Car.create([{NAME:'SIENA'}])
+Car.create([{NAME:'PALIO'}])
+Car.create([{NAME:'FOX'}])
+Car.create([{NAME:'GOL'}])
+Car.create([{NAME:'ONIX'}])

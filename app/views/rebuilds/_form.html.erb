@@ -13,12 +13,16 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :CAR_id %><br>
+    <%= f.select(:CAR_id, Car.all.collect {|p| [ p.NAME, p.id ] }, {include_blank: 'Não Definido'})%>
+  </div>
+  <div class="field">
     <%= f.label :VALUE %><br>
     <%= f.text_field :VALUE %>
   </div>
   <div class="field">
     <%= f.label :HISTORY %><br>
-    <%= f.text_field :HISTORY %>
+    <%= f.text_area :HISTORY %>
   </div>
   <div class="actions">
     <%= f.submit %>

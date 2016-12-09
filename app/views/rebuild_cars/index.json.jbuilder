@@ -1,1 +1,0 @@
-json.array! @rebuild_cars, partial: 'rebuild_cars/rebuild_car', as: :rebuild_car

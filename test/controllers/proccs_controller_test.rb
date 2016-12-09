@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ProcCsControllerTest < ActionController::TestCase
+class ProccsControllerTest < ActionController::TestCase
   setup do
     @procc = proccs(:one)
   end

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RecordFinanciaLsControllerTest < ActionController::TestCase
+class RecordFinancialsControllerTest < ActionController::TestCase
   setup do
     @record_financial = record_financials(:one)
   end

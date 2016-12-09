@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class InvoicEsControllerTest < ActionController::TestCase
+class InvoicesControllerTest < ActionController::TestCase
   setup do
     @invoice = invoices(:one)
   end

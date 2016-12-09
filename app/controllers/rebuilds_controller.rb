@@ -1,7 +1,6 @@
 class RebuildsController < ApplicationController
   before_action :set_rebuild, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!
-  
+
   # GET /rebuilds
   # GET /rebuilds.json
   def index
@@ -16,6 +15,14 @@ class RebuildsController < ApplicationController
   # GET /rebuilds/new
   def new
     @rebuild = Rebuild.new
+    
+    if params.has_key?(:carro)
+      carro = Car.find(params[:carro]) 
+      @rebuild.CAR_id = carro.id
+      @rebuild.HISTORY = 'Remontagem do carro ' + carro.NAME
+      @rebuild.VALUE = (carro.FIPEVALUE * 0.01)
+    end
+    
   end
 
   # GET /rebuilds/1/edit
@@ -70,6 +77,6 @@ class RebuildsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rebuild_params
-      params.require(:rebuild).permit(:VALUE, :HISTORY)
+      params.require(:rebuild).permit(:CAR_id, :VALUE, :HISTORY)
     end
 end

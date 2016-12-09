@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class PerfilProcesSesControllerTest < ActionController::TestCase
+class PerfilProcessesControllerTest < ActionController::TestCase
   setup do
     @perfil_process = perfil_processes(:one)
   end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161205174526) do
+ActiveRecord::Schema.define(version: 20161209201427) do
 
   create_table "accounts", force: :cascade do |t|
     t.string   "BANK"
@@ -119,32 +119,15 @@ ActiveRecord::Schema.define(version: 20161205174526) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "rebuild_cars", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer  "car_id"
-    t.integer  "rebuild_id"
-  end
-
-  add_index "rebuild_cars", ["car_id"], name: "index_rebuild_cars_on_car_id"
-  add_index "rebuild_cars", ["rebuild_id"], name: "index_rebuild_cars_on_rebuild_id"
-
   create_table "rebuilds", force: :cascade do |t|
+    t.integer  "CAR_id"
     t.decimal  "VALUE"
-    t.string   "HISTORY"
+    t.text     "HISTORY"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "record_financials", force: :cascade do |t|
-    t.integer  "financial_id"
-    t.integer  "record_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  add_index "record_financials", ["financial_id"], name: "index_record_financials_on_financial_id"
-  add_index "record_financials", ["record_id"], name: "index_record_financials_on_record_id"
+  add_index "rebuilds", ["CAR_id"], name: "index_rebuilds_on_CAR_id"
 
   create_table "records", force: :cascade do |t|
     t.date     "DATE_EMISSION"
@@ -153,7 +136,7 @@ ActiveRecord::Schema.define(version: 20161205174526) do
     t.decimal  "VALUE_FINANCED"
     t.decimal  "QT_PORTION"
     t.decimal  "VALUE_PORTION"
-    t.decimal  "VALUE_TOTAL?"
+    t.decimal  "VALUE_TOTAL"
     t.datetime "created_at",          null: false
     t.datetime "updated_at",          null: false
     t.integer  "account_id"

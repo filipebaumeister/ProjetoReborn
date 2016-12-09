@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  CAR_id: 
   VALUE: 9.99
-  HISTORY: MyString
+  HISTORY: MyText
 
 two:
+  CAR_id: 
   VALUE: 9.99
-  HISTORY: MyString
+  HISTORY: MyText
