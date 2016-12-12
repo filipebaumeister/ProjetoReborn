@@ -18,7 +18,7 @@ class RebuildsController < ApplicationController
     
     if params.has_key?(:carro)
       carro = Car.find(params[:carro]) 
-      @rebuild.CAR_id = carro.id
+      @rebuild.car_id = carro.id
       @rebuild.HISTORY = 'Remontagem do carro ' + carro.NAME
     end
     

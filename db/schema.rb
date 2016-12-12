@@ -124,10 +124,10 @@ ActiveRecord::Schema.define(version: 20161212143935) do
     t.text     "HISTORY"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "CAR_id"
+    t.integer  "car_id"
   end
 
-  add_index "rebuilds", ["CAR_id"], name: "index_rebuilds_on_CAR_id"
+  add_index "rebuilds", ["car_id"], name: "index_rebuilds_on_car_id"
 
   create_table "records", force: :cascade do |t|
     t.date     "DATE_EMISSION"
