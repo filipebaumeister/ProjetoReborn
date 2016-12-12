@@ -20,7 +20,6 @@ class RebuildsController < ApplicationController
       carro = Car.find(params[:carro]) 
       @rebuild.CAR_id = carro.id
       @rebuild.HISTORY = 'Remontagem do carro ' + carro.NAME
-      @rebuild.VALUE = (carro.FIPEVALUE * 0.01)
     end
     
   end
