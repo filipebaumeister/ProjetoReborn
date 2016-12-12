@@ -76,6 +76,6 @@ class RebuildsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rebuild_params
-      params.require(:rebuild).permit(:CAR_id, :VALUE, :HISTORY)
+      params.require(:rebuild).permit(:car_id, :VALUE, :HISTORY)
     end
 end

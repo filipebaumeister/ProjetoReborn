@@ -13,7 +13,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :CAR_id %><br>
+    <%= f.label :car_id %><br>
     <%= f.select(:car_id, Car.all.collect {|p| [ p.NAME, p.id ] }, {include_blank: 'Não Definido'})%>
   </div>
   <div class="field">
