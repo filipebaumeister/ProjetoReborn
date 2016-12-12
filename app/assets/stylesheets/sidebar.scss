@@ -10,6 +10,7 @@
 
 /* Toggle Styles */
 
+
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -31,10 +32,10 @@
     margin-left: -250px;
     overflow-y: auto;
     background: #00a3cc;
-    -webkit-transition: all 1.5s ease;
+/*    -webkit-transition: all 1.5s ease;
     -moz-transition: all 1.5s ease;
     -o-transition: all 1.5s ease;
-    transition: all 1.5s ease;
+    transition: all 1.5s ease;*/
 }
 
 #wrapper.toggled #sidebar-wrapper {
